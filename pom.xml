@@ -10,6 +10,7 @@
 
     <properties>
         <kotlin.version>1.3.72</kotlin.version>
+        <outFile>target/Hippo.jar</outFile>
     </properties>
 
     <repositories>
@@ -50,6 +51,15 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>testserver</id>
+            <properties>
+                <outFile>C:\Users\elias\Desktop\Aufträge\Testserver\1.16.1\plugins\Hippo.jar</outFile>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <sourceDirectory>src/main/kotlin</sourceDirectory>
@@ -142,7 +152,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <outputFile>C:\Users\elias\Desktop\Aufträge\Testserver\1.16.1\plugins\Hippo.jar</outputFile>
+                    <outputFile>${outFile}</outputFile>
                 </configuration>
             </plugin>
         </plugins>
