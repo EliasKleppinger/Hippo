@@ -5,6 +5,7 @@ import com.eclipsesource.v8.V8
 import com.eclipsesource.v8.V8Object
 import com.github.eliaskleppinger.hippo.event.EventManager
 import com.github.eliaskleppinger.hippo.scripts.ScriptThread
+import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 import java.awt.Event
 import java.io.File
